@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the project directory
-PROJECT_DIR="https://github.com/6Sin6/Rafael_hometask"
+PROJECT_DIR="C:\Users\alexs\Desktop\project"
 
 # Build the Docker image using CMake
 build_image() {
