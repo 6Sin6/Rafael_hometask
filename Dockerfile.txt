@@ -1,0 +1,7 @@
+FROM python:3.8
+
+WORKDIR /app
+
+COPY Rafael_task.py .
+
+CMD ["python", "Rafael_task.py"]

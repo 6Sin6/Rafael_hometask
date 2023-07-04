@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.12)
+project(MyPythonProject)
+
+# Copy the main.py file to the build directory
+configure_file(Rafael_task.py Rafael_task.py COPYONLY)
+
+# Build the Docker image
+add_custom_target(docker_build
+    COMMAND docker build -t mypythonapp .
+    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
+    COMMENT "Building Docker image"
+)
